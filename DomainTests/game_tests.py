@@ -7,7 +7,8 @@ class GameTests(unittest.TestCase):
         self.assertEqual(Game._instance, None)
         game = Game()
         self.assertEqual(Game._instance, game)
-        game = Game()
+        game2 = Game()
+        self.assertEqual(game, game2)
 
 
 
