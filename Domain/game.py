@@ -1,6 +1,6 @@
-from Domain.GameState import GameState
-from Domain.WordGenerator import get_random_word
-from Domain.Word import Word
+from Hangman.Domain.gameState import GameState
+from Hangman.Domain.word_generator import get_random_word
+from Hangman.Domain.word import Word
 
 
 class Game:

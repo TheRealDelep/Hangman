@@ -1,5 +1,6 @@
 import unittest
-from Domain import Game.Game
+
+from Hangman.Domain.game import Game
 
 
 class MyTestCase(unittest.TestCase):
