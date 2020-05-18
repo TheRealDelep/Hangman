@@ -6,7 +6,7 @@ def get_random_word() -> str:
     try:
         with open("word_pool.txt", "r") as word_file:
             words = word_file.readlines()
-            return words[random.randint(0, len(words))]
+            return words[random.randint(0, len(words))].strip()
     except IOError:
         __Initialize_word_pool()
         return get_random_word()
