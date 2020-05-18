@@ -7,11 +7,11 @@ class Word:
     def word(self):
         return "".join([c for c in self.letters])
 
-    def __eq__(self, other):
-        if other is str:
+    def __eq__(self, other) -> bool:
+        if type(other) == str:
             return self.word == other
-        elif other is Word:
-            return self.word == "".join([c for c in other])
+        elif type(other) == type(self):
+            return self.word == other.word
         else:
             raise ValueError(f"Cannot compare Word with {str(type(other))}")
 
